@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Image {
+  asset_id: String!
+  public_id: String!
+  width: Float!
+  height: Float!
+  format: String!
+  resource_type: String!
+  created_at: String!
+  bytes: Float!
+  secure_url: String!
+}
+
+type Query {
+  image: Boolean!
+}
+
+type Mutation {
+  uploadFile(file: Upload!): Image!
+}
+
+"""The `Upload` scalar type represents a file upload."""
+scalar Upload
